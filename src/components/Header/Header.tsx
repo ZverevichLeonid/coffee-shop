@@ -1,3 +1,4 @@
+import { BeansLogo } from "../BeansLogo/BeansLogo";
 import { Logo } from "../Logo/Logo";
 import cls from "./Header.module.css";
 

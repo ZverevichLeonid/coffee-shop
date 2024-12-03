@@ -14,6 +14,18 @@
   background-color: white;
 }
 
+.white,
+.white::after,
+.white::before {
+  filter: none;
+}
+
+.black,
+.black::after,
+.black::before {
+  filter: brightness(0%) contrast(100%);
+}
+
 .logo::before {
   left: -85px;
 }

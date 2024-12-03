@@ -3,3 +3,10 @@
   gap: 1px;
   align-items: flex-end;
 }
+.black {
+  filter: brightness(0%) contrast(100%);
+}
+
+.white {
+  filter: none;
+}

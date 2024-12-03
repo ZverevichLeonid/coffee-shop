@@ -1,0 +1,16 @@
+.footerNav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 30px;
+  color: black;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.wrapper {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,26 @@
+.title {
+  padding-top: 80px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 20.22px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 589px;
+  margin-bottom: 101px;
+}
+
+.text p {
+  margin-bottom: 25px;
+}
+
+.wrapper {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
