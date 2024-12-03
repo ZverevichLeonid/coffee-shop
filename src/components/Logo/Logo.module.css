@@ -1,0 +1,5 @@
+.logo {
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
+}

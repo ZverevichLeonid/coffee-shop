@@ -1,0 +1,23 @@
+.logo {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.logo::before,
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background-color: white;
+}
+
+.logo::before {
+  left: -85px;
+}
+
+.logo::after {
+  right: -85px;
+}

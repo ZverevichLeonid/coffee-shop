@@ -1,0 +1,15 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.headerNav {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  padding-top: 30px;
+  color: white;
+}
