@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  width: 220px;
+  height: 280px;
+  padding: 37px 27px 22px 27px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: all 0.1s linear;
+  cursor: progress;
+
+  div {
+    border-radius: 8px;
+  }
+}
+.card > div:not(:nth-child(1)) {
+  height: 20px;
+}
+
+.img {
+  width: 167px;
+  height: 115px;
+}
+.name {
+  width: 100%;
+}
+.country {
+  width: 55%;
+}
+.price {
+  width: 35%;
+}
+
+.skeleton {
+  background: linear-gradient(
+      90deg,
+      rgb(200, 200, 200),
+      rgba(255, 255, 255),
+      rgb(200, 200, 200),
+      rgba(255, 255, 255)
+    )
+    right / 300% 100%;
+  animation: skeleton-loading 2.5s linear infinite;
+}
+
+@keyframes skeleton-loading {
+  to {
+    background-position: left;
+  }
+}

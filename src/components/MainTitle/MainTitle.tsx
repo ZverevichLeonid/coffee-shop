@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { BeansLogo } from "../BeansLogo/BeansLogo";
 import { Button } from "../Button/Button";
 import cls from "./MainTitle.module.css";
@@ -13,7 +14,9 @@ export const MainTitle = () => {
             We makes every day full of energy and taste
           </p>
           <p className={cls.subDesc}>Want to try our beans?</p>
-          <Button>More</Button>
+          <Button>
+            <Link to={"/our-coffee"}>More</Link>
+          </Button>
         </div>
       </div>
     </section>

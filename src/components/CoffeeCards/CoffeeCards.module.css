@@ -1,0 +1,11 @@
+.section {
+  margin-bottom: 30px;
+}
+.wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 71px;
+  row-gap: 60px;
+}

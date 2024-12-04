@@ -5,14 +5,19 @@
   font-weight: 500;
   font-style: normal;
   background: transparent;
-  color: white;
   border: 1px solid white;
   border-radius: 3px;
   padding: 10px 42px;
   transition: all 0.25s ease-in-out;
 }
-
+.btn a {
+  transition: all 0.25s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
 .btn:hover {
-  color: black;
+  a {
+    color: black;
+  }
   background-color: white;
 }

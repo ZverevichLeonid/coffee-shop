@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 220px;
+  padding: 37px 27px 22px 27px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+.img {
+  width: 167px;
+  height: 115px;
+  object-fit: contain;
+}
+
+.name {
+  text-align: center;
+}
+.country {
+  text-align: right;
+}
+.price {
+  text-align: right;
+}

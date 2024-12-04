@@ -3,6 +3,8 @@ import cls from "./BestCoffeeCards.module.css";
 import { getBestCoffee } from "../../utils/getData";
 import { BestCoffeeCards as BestCoffeeCardsType } from "../../utils/types";
 import { BestCoffeeCard } from "../BestCoffeeCard/BestCoffeeCard";
+import { motion } from "motion/react";
+import { CARDS_CONTAINER_CONFIG } from "../../utils/animation_config";
 
 export const BestCoffeeCards = () => {
   const [cards, setCards] = useState<BestCoffeeCardsType>([]);
@@ -13,22 +15,28 @@ export const BestCoffeeCards = () => {
     }
     setData();
   }, []);
-  // loader
+
   return (
     cards.length > 0 && (
-      <div className={cls.cards}>
-        {cards.map((card) => {
+      <motion.div
+        viewport={{ once: true }}
+        initial="hidden"
+        whileInView="show"
+        variants={CARDS_CONTAINER_CONFIG}
+        className={cls.cards}
+      >
+        {cards.map((card, index) => {
           return (
             <BestCoffeeCard
+              key={index}
               id={card.id}
               image={card.image}
               name={card.name}
               price={card.price}
-              key={card.id}
             />
           );
         })}
-      </div>
+      </motion.div>
     )
   );
 };

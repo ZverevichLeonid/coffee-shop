@@ -1,0 +1,49 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 83px;
+  margin-bottom: 60px;
+}
+.input {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  width: 180px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.filter {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.filterBtn {
+  width: 75px;
+  height: 30px;
+  font-size: 12px;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: white;
+  border: none;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 4px;
+  transition: all 0.15s linear;
+}
+.activeBtn {
+  background-color: gray;
+  color: white;
+}
+
+.filterBtn:hover {
+  scale: 1.1;
+  background-color: gray;
+  color: white;
+}

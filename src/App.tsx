@@ -1,11 +1,7 @@
-import { HomePage } from "./pages/HomePage";
+import { routes } from "./router/router_config";
 
 function App() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+  return routes;
 }
 
 export default App;
