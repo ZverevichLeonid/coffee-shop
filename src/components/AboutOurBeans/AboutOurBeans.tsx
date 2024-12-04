@@ -7,7 +7,7 @@ export const AboutOurBeans = () => {
     <section>
       <div className="container">
         <div className={cls.wrapper}>
-          <img src={img} alt="about our beans" />
+          <img className={cls.img} src={img} alt="about our beans" />
           <div className={cls.text}>
             <h2 className={cls.title}>About our beans</h2>
             <div className={cls.logoWrapper}>

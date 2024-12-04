@@ -38,3 +38,10 @@
     margin-bottom: 20px;
   }
 }
+
+.img {
+  border-radius: 8px;
+  background-color: rgb(200, 200, 200);
+  width: 272px;
+  height: 375px;
+}
