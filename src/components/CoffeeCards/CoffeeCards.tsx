@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCoffee } from "../../utils/getData";
+import { getAllCoffee } from "../../utils/get_data";
 import { CoffeeCards as CoffeeCardsType } from "../../utils/types";
 import { CoffeeCard } from "../CoffeeCard/CoffeeCard";
 import { CoffeeFilters } from "../CoffeeFilters/CoffeeFilters";
@@ -16,7 +16,7 @@ export const CoffeeCards = () => {
 
   useEffect(() => {
     async function setData() {
-      const data = await getCoffee(queryParams, activeFilter);
+      const data = await getAllCoffee(queryParams, activeFilter);
       setCards(data);
       setTimeout(() => {
         setIsloading(false);
@@ -42,6 +42,7 @@ export const CoffeeCards = () => {
                   id={card.id}
                   country={card.country}
                   image={card.image}
+                  description={card.description}
                   name={card.name}
                   price={card.price}
                 />

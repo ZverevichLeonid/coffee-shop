@@ -10,6 +10,10 @@
   transition: all 0.1s linear;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
 .card:hover {
   transform: scale(1.15);
 }

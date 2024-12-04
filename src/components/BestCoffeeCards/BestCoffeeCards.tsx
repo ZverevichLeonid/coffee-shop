@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import cls from "./BestCoffeeCards.module.css";
-import { getBestCoffee } from "../../utils/getData";
+import { getBestCoffee } from "../../utils/get_data";
 import { BestCoffeeCards as BestCoffeeCardsType } from "../../utils/types";
 import { BestCoffeeCard } from "../BestCoffeeCard/BestCoffeeCard";
 import { motion } from "motion/react";

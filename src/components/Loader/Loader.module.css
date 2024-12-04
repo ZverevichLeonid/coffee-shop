@@ -1,0 +1,10 @@
+.loader {
+  width: 70px;
+  height: 70px;
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  margin: 0 auto;
+  cursor: progress;
+}

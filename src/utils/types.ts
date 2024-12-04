@@ -11,6 +11,7 @@ export type CoffeeCard = {
   price: string;
   image: string;
   country: string;
+  description: string;
 };
 
 export type BestCoffeeCards = BestCoffeeCard[];
