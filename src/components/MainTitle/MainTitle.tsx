@@ -14,9 +14,9 @@ export const MainTitle = () => {
             We makes every day full of energy and taste
           </p>
           <p className={cls.subDesc}>Want to try our beans?</p>
-          <Button>
-            <Link to={"/our-coffee"}>More</Link>
-          </Button>
+          <Link className={cls.link} to={"/our-coffee"}>
+            <Button>More</Button>
+          </Link>
         </div>
       </div>
     </section>

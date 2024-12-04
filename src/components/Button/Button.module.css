@@ -9,15 +9,10 @@
   border-radius: 3px;
   padding: 10px 42px;
   transition: all 0.25s ease-in-out;
-}
-.btn a {
-  transition: all 0.25s ease-in-out;
   color: white;
-  text-decoration: none;
 }
+
 .btn:hover {
-  a {
-    color: black;
-  }
+  color: black;
   background-color: white;
 }
