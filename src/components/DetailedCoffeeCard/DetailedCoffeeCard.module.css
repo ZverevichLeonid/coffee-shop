@@ -29,6 +29,10 @@
   margin: 0 auto;
   margin-bottom: 25px;
 }
+.info {
+  line-height: 20px;
+}
+
 .info > span:nth-child(1) {
   font-weight: 900;
 }
