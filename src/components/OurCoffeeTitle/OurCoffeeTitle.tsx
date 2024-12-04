@@ -1,4 +1,5 @@
 import cls from "./OurCoffeeTitle.module.css";
+
 export const OurCoffeeTitle = () => {
   return (
     <section className={cls.main}>

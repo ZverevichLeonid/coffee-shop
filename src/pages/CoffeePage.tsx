@@ -6,9 +6,9 @@ import { useParams } from "react-router";
 import { DetailedCoffeeCard } from "../components/DetailedCoffeeCard/DetailedCoffeeCard";
 import { CoffeeCard } from "../utils/types";
 import { Footer } from "../components/Footer/Footer";
-import ScrollToTop from "../utils/ScrollToTop";
 import { DetailedCoffeeCardLoader } from "../components/DetailedCoffeeCard/DetailedCoffeeCardLoader";
 import { NotFound } from "../components/NotFound/NotFound";
+import ScrollToTop from "../utils/ScrollToTop";
 
 export const CoffeePage = () => {
   const { id } = useParams();
@@ -27,7 +27,7 @@ export const CoffeePage = () => {
     }
     setData();
   }, [id]);
-  console.log(coffeeData);
+
   return (
     <>
       <ScrollToTop />

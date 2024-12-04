@@ -4,6 +4,7 @@ import { CoffeeCards as CoffeeCardsType } from "../../utils/types";
 import { CoffeeCard } from "../CoffeeCard/CoffeeCard";
 import { CoffeeFilters } from "../CoffeeFilters/CoffeeFilters";
 import { CoffeeCardSkeleton } from "../CoffeeCard/CoffeeCardSkeleton";
+import { NotFound } from "../NotFound/NotFound";
 import cls from "./CoffeeCards.module.css";
 
 export const CoffeeCards = () => {
@@ -19,6 +20,7 @@ export const CoffeeCards = () => {
       const data = await getAllCoffee(queryParams, activeFilter);
       setCards(data);
       setTimeout(() => {
+        // Задержка чтобы показать заглушки
         setIsloading(false);
       }, 1500);
     }
@@ -52,8 +54,8 @@ export const CoffeeCards = () => {
             skeletonCards.map((_, index) => {
               return <CoffeeCardSkeleton key={index} />;
             })}
-          {isEmpty && <span>The coffee list is empty</span>}
         </div>
+        {isEmpty && <NotFound />}
       </div>
     </section>
   );

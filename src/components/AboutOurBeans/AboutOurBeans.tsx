@@ -1,6 +1,6 @@
+import { BeansLogo } from "../BeansLogo/BeansLogo";
 import cls from "./AboutOurBeans.module.css";
 import img from "../../assets/about-our-beans.jpg";
-import { BeansLogo } from "../BeansLogo/BeansLogo";
 
 export const AboutOurBeans = () => {
   return (

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import cls from "./BestCoffeeCards.module.css";
 import { getBestCoffee } from "../../utils/get_data";
 import { BestCoffeeCards as BestCoffeeCardsType } from "../../utils/types";
 import { BestCoffeeCard } from "../BestCoffeeCard/BestCoffeeCard";
 import { motion } from "motion/react";
 import { CARDS_CONTAINER_CONFIG } from "../../utils/animation_config";
+import cls from "./BestCoffeeCards.module.css";
 
 export const BestCoffeeCards = () => {
   const [cards, setCards] = useState<BestCoffeeCardsType>([]);
+
   useEffect(() => {
     async function setData() {
       const cards = await getBestCoffee();
